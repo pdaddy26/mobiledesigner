@@ -1,0 +1,16 @@
+#canvas_container {
+    display: flex;
+    justify-content: center;
+}
+#canvas {
+    width: 320px;
+    height: 568px;
+    border: 1px solid green;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.selected {
+    border: 2px solid blue;
+}

@@ -41,8 +41,10 @@ export class DesignerComponent implements OnInit {
   addIds() {
     this.canvasChildren.forEach(element => {
       let id = element.getAttribute(this.DATA_DATEX_ID);
-      if(id === null)
-        this.render.setAttribute(element, this.DATA_DATEX_ID, uuid());
+      if(id === null) {
+        id = uuid();
+        this.render.setAttribute(element, this.DATA_DATEX_ID, id;
+      }
     });
   }
 
@@ -68,7 +70,7 @@ export class DesignerComponent implements OnInit {
   onClick(ev) {
     let element = ev.srcElement;
     this.canvasChildren.forEach(element => {
-      this.render.removeClass(element, 'selected');
+      this.render.removeClass(element, "selected");
     })
     this.render.addClass(ev.srcElement, "selected");
 
@@ -84,6 +86,6 @@ export class DesignerComponent implements OnInit {
   }
 
   ngOnChanges(changes) {
-    console.log(changes)
+    // console.log(changes)
   }
 }

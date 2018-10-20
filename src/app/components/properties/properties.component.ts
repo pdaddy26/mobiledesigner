@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, KeyValueDiffers } from '@angular/core';
+import { Component, OnInit, Input, KeyValueDiffers, Output, KeyValueChangeRecord, EventEmitter } from '@angular/core';
 import { Style } from '../../models/style';
 
 @Component({
@@ -10,6 +10,8 @@ import { Style } from '../../models/style';
 export class PropertiesComponent implements OnInit {
 
   @Input() style : Style;
+  @Output() styleChanged = new EventEmitter<KeyValueChangeRecord<string, string>>();
+
   differ: any;
 
   constructor(differs:  KeyValueDiffers) { 
@@ -28,7 +30,7 @@ export class PropertiesComponent implements OnInit {
 
     if (changes) {
       changes.forEachChangedItem((elt) => {
-        console.log(elt);
+        this.styleChanged.emit(elt);
       });
     }
   }

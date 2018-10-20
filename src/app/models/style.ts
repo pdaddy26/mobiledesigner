@@ -1,3 +1,3 @@
 export class Style {
-    bgColor: string = "#ffffff";
+    "background-color": string = "#ffffff";
 }

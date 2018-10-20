@@ -1,0 +1,3 @@
+{ 
+    "template" : "<button>Touch me!</button><label>Oh hell NO!</label><input type=\"text\" value=\"Type here\"/>"
+}

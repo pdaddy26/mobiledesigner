@@ -1,6 +1,6 @@
 #canvas_container {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 #canvas {
     width: 320px;

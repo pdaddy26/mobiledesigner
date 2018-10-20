@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="main_container">
   <app-designer id="designer_container" #designer></app-designer>
-  <app-properties id="properties_container" [style]="designer.currentStyle"></app-properties>
+  <app-properties id="properties_container" (styleChanged)="designer.onStyleChange($event)" [style]="designer.currentStyle"></app-properties>
 </div>

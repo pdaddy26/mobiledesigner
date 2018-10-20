@@ -4,6 +4,7 @@
     background: url(/assets/imgs/nexus5-black.png) no-repeat;
     width: 408px;
     height: 804px;
+    margin: auto;
 }
 #canvas {
     width: 360px;
@@ -16,6 +17,10 @@
 
 .selected {
     border: 2px solid blue;
+}
+
+#canvas *:hover {
+    border: 1px solid blue;
 }
 
 #designer_canvas_container {

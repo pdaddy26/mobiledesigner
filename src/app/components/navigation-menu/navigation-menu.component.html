@@ -1,0 +1,43 @@
+<mat-accordion>
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Receiving
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <mat-list-item>
+          <a matLine href="#">Select Shipment</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a matLine href="#">Select Receiving Task</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a matLine href="#">Confirm Receiving Task</a>
+        </mat-list-item>
+      </mat-nav-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Picking
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-list>
+      
+      <mat-nav-list>
+        <mat-list-item>
+          <a matLine href="#">Select Shipment</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a matLine href="#">Select Pick Task</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a matLine href="#">Confirm Pick Task</a>
+        </mat-list-item>
+      </mat-nav-list>
+
+    </mat-list>
+  </mat-expansion-panel>
+</mat-accordion>

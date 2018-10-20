@@ -35,8 +35,8 @@ export class DesignerComponent {
 
   ngAfterViewInit() {
     // mimic the template coming from server
-    //this.http.get("./assets/template.json").toPromise().then((template)=> {
-    this.http.get("http://localhost:3000/api/app/").toPromise().then((template : any)=> {
+    this.http.get("./assets/template.json").toPromise().then((template: any)=> {
+    //this.http.get("http://localhost:3000/api/app/").toPromise().then((template : any)=> {
       console.log(template);
 
       // inject the html into the canvas
@@ -198,12 +198,12 @@ export class DesignerComponent {
     let body = {
       template: html
     }
-    this.http.post("http://localhost:3000/api/app/build/", body).toPromise()
-    .then((resp) => {
-      console.log("build resp", resp);
-    })
-    .catch(err => {
-      console.log("build err", err);
-    })
+    // this.http.post("http://localhost:3000/api/app/build/", body).toPromise()
+    // .then((resp) => {
+    //   console.log("build resp", resp);
+    // })
+    // .catch(err => {
+    //   console.log("build err", err);
+    // })
   }
 }

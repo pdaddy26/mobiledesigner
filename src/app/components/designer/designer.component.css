@@ -5,6 +5,7 @@
     width: 408px;
     height: 804px;
     margin: auto;
+    margin-top: 10px;
 }
 #canvas {
     width: 360px;
@@ -31,5 +32,6 @@
     float:right;
     position: absolute;
     right:10px;
-    top: 10px;
+    top: 0px;
+    background-color:rgb(42,147,230);
 }

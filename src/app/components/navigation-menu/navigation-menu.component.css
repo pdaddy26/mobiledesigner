@@ -21,3 +21,7 @@ mat-expansion-panel-header.mat-expanded {
 .mat-line {
     font-weight: 200 !important;
 }
+
+mat-expansion-panel {
+    border-radius: 0px !important;
+}

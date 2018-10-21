@@ -3,13 +3,15 @@
 }
 
 #designer_container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex:3;
     height: 100vh;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
 }
 
 #properties_container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex: 1;
     height: 100vh;
 }
@@ -17,5 +19,6 @@
 #side_menu_container {
     flex:1;
     height: 100vh;
-    border: 1px solid green;
+    background-color: rgb(243, 247, 251);
+    /* border: 1px solid green; */
 }

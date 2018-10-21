@@ -13,13 +13,17 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DesignerComponent,
     PropertiesComponent,
-    NavigationMenuComponent
+    NavigationMenuComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatListModule,
     MatButtonModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

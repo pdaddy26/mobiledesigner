@@ -25,6 +25,7 @@
 
 #designer_canvas_container {
     position: relative;
+    background-color: rgb(252, 253, 255); 
 }
 #build {
     float:right;
